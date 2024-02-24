@@ -8,8 +8,6 @@ import CartSummary from "./components/CartSummary";
 import ProductSummary from "./components/ProductSummary";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <CartContextProvider>
       <Header />
