@@ -28,7 +28,7 @@ const ProductSummary = () => {
   };
 
   return (
-    <div className="flex flex-wrap  gap-2 justify-between items-center p-4 m-4 border rounded shadow">
+    <div className="flex flex-wrap gap-2 justify-between items-center p-4 m-4 border rounded shadow">
       {productData.map((product) => (
         <div key={product.id} className="mb-4 bg-neutral-400 p-2 rounded">
           <div>

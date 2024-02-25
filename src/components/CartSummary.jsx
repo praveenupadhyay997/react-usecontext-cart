@@ -15,19 +15,21 @@ const CartSummary = () => {
       <div className="text-2xl font-bold mb-4 bg-slate-500 p-4">
         Cart Summary
       </div>
-      <div className="flex flex-col items-center justify-center p-4">
+      <div className="flex gap-2 flex-wrap items-center justify-center p-4">
         {cart.map((item) => (
           <div
             key={item.id}
-            className="bg-white shadow-md rounded-lg p-6 m-4 w-full max-w-sm"
+            className="bg-lime-300 shadow-md rounded-lg p-6 m-4 w-full max-w-sm"
           >
             <h2 className="font-bold text-xl mb-2 text-gray-800">
-              {item.product_name}
+              {item.id + ":" + item.product_name}
             </h2>
             <p className="text-gray-600">Price: {item.product_cost}</p>
           </div>
         ))}
-        <div className="text-lg font-bold mt-4">Total: ${totalPrice}</div>
+      </div>
+      <div className="flex text-lg p-3 bg-lime-600 justify-center font-bold mt-4">
+        Total: ${totalPrice}
       </div>
     </>
   );
